@@ -1,0 +1,19 @@
+<div class="todos">
+    <form (submit)="agregarTodo()">
+        <input 
+        type="text"
+        name="ingresarTodo"
+        class="newTodo"
+        placeholder="Ingrese su tarea"
+        [(ngModel)]="ingresarTodo"
+        />
+        <input type="submit" value="Agregar tarea" class="cargaTodo" />
+
+    </form>
+
+    <div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completado ? 'terminado' : '' ) }}">
+        <div class="id"> {{ i + 1 }}</div>
+        <div class="contenido" (click)="todoTerminado(i)"> {{ todo.contenido }} </div>
+        <button class="eliminar" (click)="eliminarTodo(i)">Eliminar</button>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+.todo.terminado .contenido {
+    text-decoration: line-through;
+}  /* No tocar */
+
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #6649e8;
+	border-bottom: 1px solid #DDD;
+    font-weight: 600;
+}
+
+.todo:nth-child(even) {
+	background-color: #a492e8;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .contenido {
+	flex: 1 1 100%;
+}
+
+.newTodo {
+	display: block;
+	width: 96%;
+	padding: 10px 15px;
+	appearance: none;
+	background-color: #ffffff;
+	margin: 15px auto;
+	font-size: 20px;
+	outline: none;
+}
+
+.cargaTodo {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+    border-radius: 5px;
+
+	background-color: #2a1b62;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.eliminar {
+    font-family: 'Poppins', sans-serif;
+}
